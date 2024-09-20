@@ -1,0 +1,154 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+h2{
+    font-size: 2.9rem; 
+    line-height: 1em;
+}
+
+img{
+    width: 100px;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.container{
+    display: grid;
+    max-width: 1200px;
+    padding: 50px;
+    grid-gap: 10px;
+    grid-template-areas:"criarPoste principal principal poste"
+        "criarPoste plataformas frequencia poste"
+        "criarPoste plataformas frequencia poste"
+        "conteudo plataformas frequencia poste"
+        "conteudo plataformas frequencia poste"
+        "conteudo plataformas frequencia poste"
+        "conteudo alcance crecimento crecimento" ;
+}
+
+
+.container .principal{
+    grid-area: principal;
+    background-color: hsl(256, 67%, 59%);
+    padding: 40px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.container .principal h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.container .principal img{
+    margin-top: 20px;
+    width: 40%;
+}
+
+.container .principal span{
+    color: hsl(39, 100%, 71%);
+}
+
+.container .plataformas{
+    grid-area: plataformas;
+    background: hsl(0, 0%, 100%) url(../images/illustration-multiple-platforms.webp) no-repeat top left;
+    background-position: -30% 15%;
+    background-size: 125%;
+    padding: 120px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.container .frequencia{
+    grid-area: frequencia;
+    background: hsl(39, 100%, 71%) url(../images/illustration-consistent-schedule.webp) no-repeat;
+    background-position: 20px 140px;
+    background-size: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .poste{
+    grid-area: poste;
+    background: hsl(254, 88%, 90%) url(../images/illustration-schedule-posts.webp) no-repeat;
+    background-position: 30px 110px;
+    background-size: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.container .crecimento{
+    grid-area: crecimento;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container .crecimento img{
+    width: 200px;
+}
+
+
+.container .alcance{
+    grid-area: alcance;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alcance h2{
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.alcance img{
+    width: 150px;
+}
+
+.container .criarPoste{
+    grid-area: criarPoste;
+    background: hsl(31, 66%, 93%) url(../images/illustration-create-post.webp) no-repeat;
+    background-size: 80%;
+    background-position: 50% 80%;
+    padding: 50px 20px;
+    gap: 50px;
+    border-radius: 10px;
+}
+
+.criarPoste span{
+    color: hsl(256, 67%, 59%);
+}
+
+.container .conteudo{
+    grid-area: conteudo;
+    background: hsl(39, 100%, 71%) url(../images/illustration-ai-content.webp) no-repeat;
+    background-size: 80%;
+    background-position: 50% 90%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.container .crecimento h2, .criarPoste h2, .conteudo h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+}

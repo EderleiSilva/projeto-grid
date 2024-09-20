@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+    body{
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 2rem; 
+    }
+
+    .container{
+        display: grid;
+        padding: 20px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "principal principal"
+        "plataformas frequencia"
+        "poste poste"
+        "crecimento crecimento"
+        "alcance alcance"
+        "criarPoste conteudo";
+    }
+
+    .container .principal{
+        padding: 2.5rem;
+    }
+
+    .container .plataformas{
+        background-size: 100%;
+    }
+
+    .container .frequencia{
+        background-position: 20% 150% ;
+        height: 200px;
+        background-size: 200px;
+    }
+
+    .container .poste{
+        text-align: center;
+        height: 450px;
+        background-size: 300px;
+        background-position: 50%;
+    }
+
+    .container .alcance{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container .conteudo{
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        grid-template-areas: 
+        "principal"
+        "plataformas"
+        "frequencia"
+        "poste"
+        "crecimento"
+        "alcance"
+        "criarPoste"
+        "conteudo";
+    }
+
+    .container .crecimento{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .alcance{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .container .criarPoste{
+        background-size: 60%;
+        background-position: 10% 90%;
+        height: 300px;
+    }
+
+    .container .conteudo{
+        background-size: 250px;
+        background-position: 10% 90%;
+    }
+}
